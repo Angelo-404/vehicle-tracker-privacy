@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vehicle Tracker — Informativa sulla privacy</title>
+  <meta name="description" content="Informativa sulla privacy dell'app Vehicle Tracker: quali dati tratta, perché e dove restano.">
+  <style>
+    :root {
+      --bg: #f6f7f9; --surface: #ffffff; --border: #e1e4ea;
+      --text: #111418; --muted: #6b7280; --primary: #1e5eff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115; --surface: #1a1d23; --border: #2e333b;
+        --text: #f2f4f7; --muted: #9aa3b2; --primary: #5b8cff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main {
+      max-width: 760px; margin: 0 auto; padding: 32px 16px 64px;
+    }
+    h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 8px; }
+    h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+    p, li { margin: 8px 0; }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    a { color: var(--primary); }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%; border-collapse: collapse; background: var(--surface);
+      border: 1px solid var(--border); border-radius: 8px; font-size: 0.95rem;
+    }
+    th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    th { font-weight: 600; }
+    tr:last-child td { border-bottom: 0; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Informativa sulla privacy — Vehicle Tracker</h1>
+  <p class="meta">Ultimo aggiornamento: 27/09/2026</p>
+  <p class="meta">Titolare: Angelo Di Maso — contatto: <a href="mailto:angel.095@live.it">angel.095@live.it</a></p>
+
+  <p>Vehicle Tracker è un'app per tenere sotto controllo i costi, le manutenzioni, le scadenze e i chilometri dei propri veicoli. Questa informativa spiega quali dati tratta l'app, perché e dove restano.</p>
+
+  <h2>1. Dove restano i dati</h2>
+  <p>Tutti i dati inseriti o raccolti dall'app sono salvati <strong>solo sul telefono dell'utente</strong>, nel database locale dell'app. Vehicle Tracker non ha un server, non richiede un account e non invia i dati al titolare né a terzi. Non contiene pubblicità, strumenti di analisi o profilazione.</p>
+  <p>L'utente può esportare un backup o file CSV con il pulsante dedicato: il file viene creato sul telefono e condiviso solo dove l'utente sceglie (email, cloud personale, messaggi).</p>
+
+  <h2>2. Dati trattati</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dato</th><th>Perché</th><th>Dove</th></tr></thead>
+      <tbody>
+        <tr><td>Veicoli, rifornimenti, spese, manutenzioni, scadenze, gomme</td><td>Funzioni principali dell'app</td><td>Solo sul telefono</td></tr>
+        <tr><td>Foto di fatture e documenti</td><td>Archivio dei documenti del veicolo. Libretto, assicurazione, patente e carta d'identità sono cifrati (AES-256) con una chiave custodita dal sistema del telefono</td><td>Solo sul telefono</td></tr>
+        <tr><td>Posizione (anche in background)</td><td>Contare i km dei viaggi, aggiornare il contachilometri stimato, ricordare dove è parcheggiata l'auto, mostrare i distributori vicini</td><td>Solo sul telefono, vedi punto 3</td></tr>
+        <tr><td>Nome dei dispositivi Bluetooth associati (solo Android)</td><td>Riconoscere l'autoradio dell'auto per avviare e chiudere i viaggi</td><td>Solo sul telefono</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>3. Posizione</h2>
+  <p>La posizione viene usata <strong>solo se l'utente attiva il tracciamento dei viaggi</strong> e dopo un'informativa mostrata dall'app prima di qualunque richiesta del sistema.</p>
+  <ul>
+    <li><strong>Modalità automatica</strong>: l'app registra la posizione anche quando è chiusa o non in uso, per accorgersi da sola di quando l'auto parte (uscita dalla zona di parcheggio, collegamento Bluetooth dell'auto) e di quando si ferma.</li>
+    <li><strong>Modalità manuale</strong>: la posizione viene registrata solo tra "Inizia viaggio" e "Termina viaggio".</li>
+    <li><strong>Spento</strong>: la posizione non viene usata per i viaggi.</li>
+  </ul>
+  <p>Durante un viaggio i punti GPS sono salvati sul telefono. <strong>Il percorso viene cancellato</strong> quando l'utente approva o scarta il viaggio; i viaggi non approvati vengono scartati dopo 30 giorni. Dopo la cancellazione restano solo chilometri, orari, punto di partenza e punto di arrivo (per il promemoria del parcheggio).</p>
+  <p>Per mostrare un indirizzo al posto delle coordinate l'app usa il servizio di geocodifica del sistema operativo (Google su Android, Apple su iOS), che riceve le coordinate di partenza e arrivo secondo le condizioni di quei servizi.</p>
+
+  <h2>4. Servizi esterni contattati dal telefono</h2>
+  <p>L'app non invia dati personali. Il telefono scarica però contenuti pubblici da:</p>
+  <ul>
+    <li><strong>OpenFreeMap</strong> (tiles.openfreemap.org): immagini delle mappe. Come ogni sito web, il server riceve l'indirizzo IP del telefono e l'area della mappa visualizzata.</li>
+    <li><strong>Ministero delle Imprese e del Made in Italy</strong> (mimit.gov.it): file aperti dei prezzi dei carburanti (Osservaprezzi carburanti, licenza IODL 2.0). Il file è lo stesso per tutti; la posizione dell'utente non viene inviata.</li>
+    <li><strong>Expo</strong> (u.expo.dev): controllo e download degli aggiornamenti dell'app.</li>
+  </ul>
+
+  <h2>5. Permessi richiesti</h2>
+  <ul>
+    <li>Posizione "mentre usi l'app" e "sempre": vedi punto 3.</li>
+    <li>Notifiche: promemoria di scadenze (assicurazione, bollo, revisione) e avviso "Viaggio in corso" durante la registrazione.</li>
+    <li>Fotocamera e foto: allegare fatture e documenti.</li>
+    <li>Dispositivi nelle vicinanze (Bluetooth, solo Android): vedi punto 2.</li>
+  </ul>
+  <p>Ogni permesso può essere revocato dalle impostazioni del telefono; le funzioni collegate smettono di funzionare, il resto dell'app no.</p>
+
+  <h2>6. Conservazione e cancellazione</h2>
+  <p>I dati restano sul telefono finché l'utente non li cancella dall'app o non disinstalla l'app: la disinstallazione elimina tutto. Eliminare un veicolo elimina anche i suoi dati.</p>
+
+  <h2>7. Diritti dell'utente</h2>
+  <p>Poiché i dati non lasciano il telefono, l'utente ne ha il controllo diretto (consultazione, modifica, esportazione, cancellazione). Per domande su questa informativa: <a href="mailto:angel.095@live.it">angel.095@live.it</a>.</p>
+
+  <h2>8. Minori</h2>
+  <p>L'app non è destinata a minori di 14 anni.</p>
+
+  <h2>9. Modifiche</h2>
+  <p>Eventuali modifiche a questa informativa saranno pubblicate a questo indirizzo con la data di aggiornamento.</p>
+
+  <footer>Vehicle Tracker — informativa sulla privacy</footer>
+</main>
+</body>
+</html>
